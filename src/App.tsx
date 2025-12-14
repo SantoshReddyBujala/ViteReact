@@ -3,6 +3,10 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import UserCard from "./components/01_RequiredoPtionalProps";
+import DefPar, { DefPar2 } from "./components/02_Default_Params";
+import ChildNodes, {
+  RequiredChildNodes,
+} from "./components/03_ChildrenReactNode";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -30,6 +34,20 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
       <UserCard id="Test" subTitle="Testing" />
+      <DefPar name="Reddy" />
+      <DefPar2 name="Bujala" />
+      <ChildNodes
+        name="Manvith"
+        children={
+          <ul>
+            <li>Reddy</li>
+            <li>Bujala</li>
+          </ul>
+        }
+      />
+      <RequiredChildNodes name="Manvith">
+        Testing child nodes
+      </RequiredChildNodes>
     </>
   );
 }
