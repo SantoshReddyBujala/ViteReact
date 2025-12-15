@@ -7,6 +7,7 @@ import DefPar, { DefPar2 } from "./components/02_Default_Params";
 import ChildNodes, {
   RequiredChildNodes,
 } from "./components/03_ChildrenReactNode";
+import Badge from "./components/04_AsConstant";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -48,6 +49,7 @@ function App() {
       <RequiredChildNodes name="Manvith">
         Testing child nodes
       </RequiredChildNodes>
+      <Badge label="Testing" variant="secondary" />
     </>
   );
 }
