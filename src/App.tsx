@@ -8,6 +8,10 @@ import ChildNodes, {
   RequiredChildNodes,
 } from "./components/03_ChildrenReactNode";
 import Badge from "./components/04_AsConstant";
+import Button from "./components/05_ComponetsExample";
+import State from "./components/06_State";
+import Events from "./components/07_Events";
+import UseReducer from "./components/08_UseReducer";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -50,6 +54,13 @@ function App() {
         Testing child nodes
       </RequiredChildNodes>
       <Badge label="Testing" variant="secondary" />
+      <br />
+      <Button variant="primary" onClick={() => alert("Clicked")}>
+        Click
+      </Button>
+      <State />
+      <Events />
+      <UseReducer />
     </>
   );
 }
